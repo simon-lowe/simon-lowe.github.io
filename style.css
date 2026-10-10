@@ -220,3 +220,21 @@ img.profile {
 }
 
 .links a { margin-right: 18px; }
+
+details { margin-top: 4px; }
+
+summary {
+  cursor: pointer;
+  width: fit-content;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+summary:hover { color: var(--text); }
+
+details p {
+  margin: 8px 0 4px;
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
