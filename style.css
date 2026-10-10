@@ -44,6 +44,7 @@ body {
 
 /* Header */
 header {
+  position: relative;
   border-bottom: 1px solid var(--rule);
 }
 
@@ -81,9 +82,11 @@ nav a {
 
 nav a:hover { color: var(--text); }
 
-nav { align-items: center; }
-
 .theme-toggle {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -279,7 +282,13 @@ img.profile {
   border-left: 2px solid var(--rule);
 }
 
+/* Keep the menu clear of the toggle once the screen edge reaches the content */
+@media (max-width: 900px) {
+  header .wrap { padding-right: 62px; }
+}
+
 @media (max-width: 640px) {
+  .theme-toggle { top: 18px; transform: none; }
   body { font-size: 1rem; }
   main { padding-top: 28px; }
   h1 { font-size: 1.75rem; }
