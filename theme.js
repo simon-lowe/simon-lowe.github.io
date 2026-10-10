@@ -15,7 +15,11 @@
     var dark = root.dataset.theme !== "dark";
     if (dark) root.dataset.theme = "dark";
     else delete root.dataset.theme;
-    try { localStorage.setItem("theme", dark ? "dark" : "light"); } catch (e) {}
+    var choice = dark ? "dark" : "light";
+    try { localStorage.setItem("theme", choice); } catch (e) {}
+    // Fallback for browsers or embeds that block storage: window.name survives
+    // page-to-page navigation within the same tab.
+    if (!window.name || /^theme=/.test(window.name)) window.name = "theme=" + choice;
     label();
   });
 
