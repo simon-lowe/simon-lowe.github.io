@@ -175,6 +175,40 @@ li li {
   font-weight: 600;
 }
 
+/* Resume: date column beside each entry */
+.cv {
+  display: grid;
+  gap: 18px;
+  margin-bottom: 8px;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  gap: 4px 24px;
+}
+
+.when {
+  color: var(--muted);
+  font-size: 0.92rem;
+  padding-top: 2px;
+}
+
+.what { min-width: 0; }
+.what strong { font-weight: 600; }
+
+ul.details {
+  list-style: none;
+  padding-left: 0;
+  margin: 4px 0 0;
+}
+
+ul.details li {
+  margin-bottom: 2px;
+  font-size: 0.93rem;
+  color: var(--muted);
+}
+
 /* Home page: photo beside bio */
 .intro {
   display: grid;
@@ -217,9 +251,35 @@ img.profile {
   h2 { margin-top: 32px; font-size: 1.3rem; }
   header .wrap { padding-top: 16px; padding-bottom: 12px; row-gap: 4px; }
   nav { gap: 4px 18px; }
+  .entry { grid-template-columns: 1fr; gap: 0; }
+  .when { padding-top: 0; }
 }
 
-.links a { margin-right: 18px; }
+/* Profile links under the name */
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  margin: -6px 0 20px;
+  font-size: 0.93rem;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.links a:hover { color: var(--accent); }
+
+.links svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  flex: none;
+}
 
 details { margin-top: 4px; }
 
