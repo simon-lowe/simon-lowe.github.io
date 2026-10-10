@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://simon-lowe.github.io/sitemap.xml
