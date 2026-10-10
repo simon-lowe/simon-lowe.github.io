@@ -3,78 +3,142 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Resume | Simon Löwe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
+<div class="wrap">
 <a class="name" href="index.html">Simon Löwe</a>
 <nav>
 <a href="index.html">Home</a>
 <a href="research.html">Research</a>
-<a class="current" href="resume.html">Resume</a>
-<a href="resources.html">Resources</a>
+<a class="current" aria-current="page" href="resume.html">Resume</a>
 </nav>
+</div>
 </header>
-<main>
+<main class="wrap">
 <h1>Resume</h1>
+
 <h2>Experience</h2>
-<ul>
-<li>2025-: Senior Economist at the Burning Glass Institute</li>
-<li>2023-2025: Economist at the Burning Glass Institute</li>
-</ul>
+<div class="cv">
+<div class="entry">
+<div class="when">2025–present</div>
+<div class="what"><strong>Senior Economist</strong>, Burning Glass Institute</div>
+</div>
+<div class="entry">
+<div class="when">2023–2025</div>
+<div class="what"><strong>Economist</strong>, Burning Glass Institute</div>
+</div>
+</div>
+
 <h2>Education</h2>
-<ul>
-<li>2019-2023: PhD in Economics at the Paris School of Economics (PSE)
-  <ul>
-  <li>Defended on November, 2nd 2023</li>
-  <li>October 2022 - September 2023: Visiting student at Bocconi University, working with Thomas Le Barbanchon</li>
-  <li>February 2022 - July 2022: Visiting student at Massachusetts Institute of Technology (MIT), invited by Simon Jäger</li>
-  </ul></li>
-<li>2017-2019: Master in Public Policy and Development at the Paris School of Economics (PSE)</li>
-<li>2015-2017: Graduate student in theoretical physics at Cornell University
-  <ul><li>A-exam note: '<a href="https://www.dropbox.com/s/c6x0gl472cx58uf/AExam.pdf?dl=0">Deformations of entanglement quantities</a>'</li></ul></li>
-<li>2013-2015: Master in Physics at the École Polytechnique Fédérale de Lausanne (EPFL)
-  <ul><li>Master Thesis: '<a href="https://www.dropbox.com/s/caqtnh99of1aij2/Technical%20and%20conceptual%20aspects%20in%20the%20proof%20of%20the%20a%20theorem.pdf?dl=0">Technical and conceptual issues in the proof of the a-theorem</a>'</li></ul></li>
-<li>2013-2015: Minor in Mathematics at the École Polytechnique Fédérale de Lausanne (EPFL)
-  <ul><li>Project: '<a href="https://www.dropbox.com/s/61kbx3gfdaz25ca/Monopoles%2C%20Instantons%20and%20Hopf%20Bundles.pdf?dl=0">Monopoles, Instantons and Hopf bundles</a>'</li></ul></li>
-<li>2010-2013: Bachelor in Physics at the École Polytechnique Fédérale de Lausanne (EPFL)</li>
-<li>2010: French Baccalaureate and Austrian Matura</li>
-</ul>
+<div class="cv">
+<div class="entry">
+<div class="when">2019–2023</div>
+<div class="what"><strong>PhD in Economics</strong>, Paris School of Economics (PSE)
+<ul class="details">
+<li>Advised by <a href="https://www.parisschoolofeconomics.com/breda-thomas/index_en.html">Thomas Breda</a> and <a href="https://www.parisschoolofeconomics.com/behaghel-luc/behaghel.htm">Luc Behaghel</a></li>
+<li>Defended on November 2, 2023</li>
+<li>Visiting student at Bocconi University, working with <a href="https://sites.google.com/site/tlebarbanchon/home">Thomas Le Barbanchon</a> (October 2022 – September 2023)</li>
+<li>Visiting student at the Massachusetts Institute of Technology (MIT), invited by <a href="https://jaeger.scholar.princeton.edu/">Simon Jäger</a> (February 2022 – July 2022)</li>
+</ul></div>
+</div>
+<div class="entry">
+<div class="when">2017–2019</div>
+<div class="what"><strong>Master's in Public Policy and Development</strong>, Paris School of Economics (PSE)</div>
+</div>
+<div class="entry">
+<div class="when">2015–2017</div>
+<div class="what"><strong>Graduate student in theoretical physics</strong>, Cornell University
+<ul class="details">
+<li>A-exam note: <a href="papers/deformations-of-entanglement-quantities.pdf">Deformations of entanglement quantities</a></li>
+</ul></div>
+</div>
+<div class="entry">
+<div class="when">2013–2015</div>
+<div class="what"><strong>Master's in Physics</strong>, École Polytechnique Fédérale de Lausanne (EPFL)
+<ul class="details">
+<li>Master's thesis: <a href="papers/a-theorem-master-thesis.pdf">Technical and conceptual aspects in the proof of the a-theorem</a></li>
+</ul></div>
+</div>
+<div class="entry">
+<div class="when">2013–2015</div>
+<div class="what"><strong>Minor in Mathematics</strong>, École Polytechnique Fédérale de Lausanne (EPFL)
+<ul class="details">
+<li>Project: <a href="papers/monopoles-instantons-hopf-bundles.pdf">Monopoles, Instantons and Hopf Bundles</a></li>
+</ul></div>
+</div>
+<div class="entry">
+<div class="when">2010–2013</div>
+<div class="what"><strong>Bachelor in Physics</strong>, École Polytechnique Fédérale de Lausanne (EPFL)</div>
+</div>
+<div class="entry">
+<div class="when">2010</div>
+<div class="what"><strong>French Baccalaureate and Austrian Matura</strong></div>
+</div>
+</div>
+
 <h2>Teaching</h2>
-<ul>
-<li>Spring 2021 &amp; 2022: Econometrics 2: Treatment effect models
-  <ul>
-  <li>Course for 1st year Master students in Public Policies and Development</li>
-  <li>Introduction to causal analysis in economics: Rubin Causal model, RCT, LATE, RDD, DiD and matching</li>
-  </ul></li>
-<li>Spring 2020: Econometrics 3
-  <ul>
-  <li>Course for 1st year Master students in Public Policies and Development</li>
-  <li>Covers limited dependent variable models, sample selection and panel methods</li>
-  </ul></li>
-<li>2015-2017: Graduate teaching assistant
-  <ul>
-  <li>Teaching assistant in Intermediate Mechanics</li>
-  <li>Teaching Assistant for the class "Why is the sky blue?" for non-science majors</li>
-  <li>Teaching Assistant in Physics Auto-tutorial, a physics class on Electromagnetism, Waves, Optics, Quantum Mechanics aimed mainly at Pre-Med students.</li>
-  <li>Teaching Assistant for a second year Electromagnetism for engineers</li>
-  </ul></li>
-<li>2012-2015: Undergraduate teaching assistant
-  <ul>
-  <li>Teaching Assistant for a first year Mechanics class for engineers. I taught two classes: One in German and the other in French.</li>
-  <li>Teaching Assistant for a first year Mechanics and Thermodynamics class.</li>
-  <li>Teaching Assistant for Analytical Mechanics for second year physics students.</li>
-  <li>Teaching Assistant in Electromagnetism for engineers.</li>
-  <li>Teaching Assistant in Fluid Mechanics, Waves and Electromagnetism for mathematicians.</li>
-  </ul></li>
-</ul>
+<h3>Economics</h3>
+<div class="cv">
+<div class="entry">
+<div class="when">Spring 2021 &amp; 2022</div>
+<div class="what"><strong>Econometrics 2: Treatment effect models</strong>, Paris School of Economics
+<ul class="details">
+<li>Course for first-year Master's students in Public Policy and Development</li>
+<li>Introduction to causal analysis in economics: Rubin causal model, RCT, LATE, RDD, DiD and matching</li>
+</ul></div>
+</div>
+<div class="entry">
+<div class="when">Spring 2020</div>
+<div class="what"><strong>Econometrics 3</strong>, Paris School of Economics
+<ul class="details">
+<li>Course for first-year Master's students in Public Policy and Development</li>
+<li>Covers limited dependent variable models, sample selection and panel methods</li>
+</ul></div>
+</div>
+</div>
+<h3>Physics</h3>
+<div class="cv">
+<div class="entry">
+<div class="when">2015–2017</div>
+<div class="what"><strong>Graduate teaching assistant</strong>, Cornell University
+<ul class="details">
+<li>Intermediate Mechanics</li>
+<li>"Why is the sky blue?", for non-science majors</li>
+<li>Physics Auto-tutorial, a physics class on Electromagnetism, Waves, Optics and Quantum Mechanics aimed mainly at pre-med students</li>
+<li>Second-year Electromagnetism for engineers</li>
+</ul></div>
+</div>
+<div class="entry">
+<div class="when">2012–2015</div>
+<div class="what"><strong>Undergraduate teaching assistant</strong>, École Polytechnique Fédérale de Lausanne (EPFL)
+<ul class="details">
+<li>First-year Mechanics for engineers; I taught two classes, one in German and the other in French</li>
+<li>First-year Mechanics and Thermodynamics</li>
+<li>Analytical Mechanics for second-year physics students</li>
+<li>Electromagnetism for engineers</li>
+<li>Fluid Mechanics, Waves and Electromagnetism for mathematicians</li>
+</ul></div>
+</div>
+</div>
+
 <h2>Awards</h2>
-<ul>
-<li>August 2015: Award for the second best GPA in the EPFL Master's curriculum</li>
-<li>2014: EPFL Excellency Fellowship</li>
-<li>2013: EPFL Excellency Fellowship</li>
-</ul>
+<div class="cv">
+<div class="entry">
+<div class="when">August 2015</div>
+<div class="what">Award for the second-best GPA in the EPFL Master's curriculum</div>
+</div>
+<div class="entry">
+<div class="when">2013, 2014</div>
+<div class="what">EPFL Excellence Fellowship</div>
+</div>
+</div>
 </main>
 </body>
 </html>

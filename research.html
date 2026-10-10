@@ -3,44 +3,53 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Research | Simon Löwe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
+<div class="wrap">
 <a class="name" href="index.html">Simon Löwe</a>
 <nav>
 <a href="index.html">Home</a>
-<a class="current" href="research.html">Research</a>
+<a class="current" aria-current="page" href="research.html">Research</a>
 <a href="resume.html">Resume</a>
-<a href="resources.html">Resources</a>
 </nav>
+</div>
 </header>
-<main>
+<main class="wrap">
 <h1>Research</h1>
 <h2>Working papers</h2>
-<h3>Econometrics</h3>
-<ul>
-<li><a href="https://www.dropbox.com/s/x7kzrggcy9a614x/LATEPS_Working_Paper.pdf?dl=0">Improving LATE estimation in experiments with imperfect compliance</a> with <a href="https://yaganhazard.github.io/">Yagan Hazard</a></li>
-</ul>
 <h3>Labor economics</h3>
-<ul>
-<li><a href="https://www.dropbox.com/scl/fi/zyrru364jnu5lam1c9jip/Fixed_term_contracts_and_wages__Rent_sharing_and_compensating_differentials-1.pdf?rlkey=zt6t9ztobg7xu8zigi1mhhyd1&amp;dl=0">Fixed-term contracts and wages: Rent-sharing and compensating differentials</a></li>
+<ul class="pubs" role="list">
+<li><a href="papers/fixed-term-contracts-and-wages.pdf">Fixed-term contracts and wages: Rent-sharing and compensating differentials</a>
+<details><summary>Abstract</summary><p>The effect of fixed-term contracts on wages is theoretically ambiguous. I introduce a simple monopsonistic model which incorporates segmented fixed-term and open-ended contracts markets, differential rent-sharing and compensating wage differentials for job security. Using exhaustive French administrative data, I then confirm several predictions of the model, documenting novel empirical facts about FTCs and wages. While the overall average wage gap between the contract types is estimated to be a precise zero, wages vary differentially between both contract types, resulting in a wage premium for low productivity firms and a wage penalty for high productivity firms. I then further illustrate the differential rent-sharing mechanism by documenting that firms only extend about half of the wage premium of open-ended contract workers to fixed-term contract workers. Finally, I show that the degree of rent-sharing varies with local labor market concentration for OECs but not for FTCs.</p></details></li>
+</ul>
+<h3>Econometrics</h3>
+<ul class="pubs" role="list">
+<li><a href="papers/late-estimation-imperfect-compliance.pdf">Improving LATE estimation in experiments with imperfect compliance</a> (with <a href="https://yaganhazard.github.io/">Yagan Hazard</a>)
+<details><summary>Abstract</summary><p>The evaluation of many policies of interest (e.g., educational and training programs) inevitably face incomplete treatment group take-up. Estimation of causal effects in these controlled or natural “experiments with imperfect compliance” usually relies on an Instrumental Variable (IV) strategy, which often yields imprecise and thus possibly uninformative inference when compliance rates are low. We tackle this problem by proposing a Test-and-Select estimator that exploits covariate information to restrict estimation to a subpopulation with non-zero compliance. We derive the asymptotic properties of our proposed estimator under standard and weak-IV-like asymptotics, and study its finite sample properties in Monte Carlo simulations. We provide conditions under which it dominates the usual 2SLS estimator in terms of precision. Under an assumption on the degree of treatment effect heterogeneity, our estimator remains first-order unbiased with respect to the Local Average Treatment Effect (LATE) estimand, setting it apart from alternatives in the burgeoning literature on the use of first-stage heterogeneity to improve the precision of IV estimators. This robustness to treatment effect heterogeneity and the potential for precision gains are illustrated using Monte Carlo simulations and two empirical applications. Applying this new estimation procedure to the returns to schooling example (where compulsory schooling laws serve as instruments for educational attainment), we document that our methodology reduces standard errors by 12% to 48% depending on specifications.</p></details></li>
 </ul>
 <h3>Computer science</h3>
-<ul>
-<li><a href="https://arxiv.org/abs/2606.01255">Agentic Clustering: Controllable Text Taxonomies via Multi-Agent Refinement</a> (with <a href="https://www.emilysilcock.com/home">Emily Silcock</a>)</li>
+<ul class="pubs" role="list">
+<li><a href="https://arxiv.org/abs/2606.01255">Agentic Clustering: Controllable Text Taxonomies via Multi-Agent Refinement</a> (with <a href="https://www.emilysilcock.com/home">Emily Silcock</a>)
+<div class="tags"><a href="https://arxiv.org/abs/2606.01255">arXiv</a><a class="highlight" href="https://github.com/emilysilcock/agentic-clustering/blob/main/plugin/README.md#installation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.7 16.6 4.1 12l4.6-4.6L7.3 6l-6 6 6 6zm6.6 0 4.6-4.6-4.6-4.6L16.7 6l6 6-6 6z"/></svg>Claude Code plugin</a></div>
+<details><summary>Abstract</summary><p>Recent text-clustering methods use large language models to propose a cluster taxonomy from a corpus and then assign each text to it. These pipelines are fundamentally programmatic: the sequence of LLM calls and the rules for stopping, merging, and splitting clusters are fixed in code in advance, so they generalise poorly across corpora of different structure and cannot easily incorporate user-supplied constraints such as a target cluster count or a clustering intent. We propose an agentic alternative in which an orchestrator LLM inspects the state of the discovery process at each step and dispatches one of a small set of specialised agents - proposer, synthesizer, auditor, investigator, and critic - adapting the pipeline to the corpus rather than executing a fixed one. On seven public text-clustering benchmarks the method achieves state-of-the-art performance, beating the strongest prior LLM baseline by up to 32% in ARI.</p></details></li>
 </ul>
 <h2>Work in progress</h2>
-<ul>
-<li>Stigma and Benefit Take-Up: Evidence from British Tabloids (with <a href="https://www.emilysilcock.com/home">Emily Silcock</a>)</li>
-<li>Bias-aware inference on LATE with bounded treatment effect heterogeneity (with <a href="https://faculty.crest.fr/xdhaultfoeuille/">Xavier D'Haultfoeuille</a> and <a href="https://yaganhazard.github.io/">Yagan Hazard</a>)</li>
+<ul class="pubs" role="list">
+<li>Discourse about Welfare Benefits (with <a href="https://www.emilysilcock.com/home">Emily Silcock</a>)</li>
+<li>Bias-aware inference on LATE with bounded treatment effect heterogeneity (with <a href="https://faculty.crest.fr/xdhaultfoeuille/">Xavier D'Haultfœuille</a>, <a href="https://yaganhazard.github.io/">Yagan Hazard</a> and <a href="https://www.parisschoolofeconomics.com/ketz-philipp/">Philipp Ketz</a>)</li>
 </ul>
 <h2>Research from another life</h2>
-<ul>
-<li><a href="https://www.dropbox.com/s/c6x0gl472cx58uf/AExam.pdf?dl=0">Deformations of entanglement quantities</a><br><span class="note">A-Exam Note at Cornell University</span></li>
-<li><a href="https://www.dropbox.com/s/caqtnh99of1aij2/Technical%20and%20conceptual%20aspects%20in%20the%20proof%20of%20the%20a%20theorem.pdf?dl=0">Technical and conceptual issues in the proof of the a-theorem</a><br><span class="note">Master Thesis at the École Polytechnique Fédérale de Lausanne (EPFL)</span></li>
-<li><a href="https://www.dropbox.com/s/61kbx3gfdaz25ca/Monopoles%2C%20Instantons%20and%20Hopf%20Bundles.pdf?dl=0">Monopoles, Instantons and Hopf bundles</a><br><span class="note">Minor Project in Mathematics at the École Polytechnique Fédérale de Lausanne (EPFL)</span></li>
+<ul class="pubs" role="list">
+<li><a href="papers/deformations-of-entanglement-quantities.pdf">Deformations of entanglement quantities</a><br><span class="note">A-exam note at Cornell University</span></li>
+<li><a href="papers/a-theorem-master-thesis.pdf">Technical and conceptual aspects in the proof of the a-theorem</a><br><span class="note">Master's thesis at the École Polytechnique Fédérale de Lausanne (EPFL)</span></li>
+<li><a href="papers/monopoles-instantons-hopf-bundles.pdf">Monopoles, Instantons and Hopf Bundles</a><br><span class="note">Minor project in mathematics at the École Polytechnique Fédérale de Lausanne (EPFL)</span></li>
 </ul>
 </main>
 </body>
