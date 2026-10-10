@@ -298,3 +298,43 @@ details p {
   color: var(--muted);
   line-height: 1.6;
 }
+
+/* Small link buttons under a paper */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.tags a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 10px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.tags a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.tags a.highlight {
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  color: var(--accent);
+}
+
+.tags a.highlight:hover { background: color-mix(in srgb, var(--accent) 18%, transparent); }
+
+.tags svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
