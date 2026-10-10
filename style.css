@@ -199,14 +199,26 @@ li li {
 
 ul.details {
   list-style: none;
+  display: grid;
+  gap: 6px;
+  margin: 8px 0 0;
   padding-left: 0;
-  margin: 4px 0 0;
 }
 
 ul.details li {
-  margin-bottom: 2px;
+  position: relative;
+  margin: 0;
+  padding-left: 16px;
   font-size: 0.93rem;
+  line-height: 1.45;
   color: var(--muted);
+}
+
+ul.details li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: color-mix(in srgb, var(--muted) 60%, transparent);
 }
 
 /* Home page: photo beside bio */
