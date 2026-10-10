@@ -1,0 +1,11 @@
+body { font-family: Georgia, serif; max-width: 760px; margin: 0 auto; padding: 0 16px 48px; line-height: 1.55; color: #222; background: #fff; }
+header { border-bottom: 1px solid #ddd; padding: 20px 0 12px; margin-bottom: 24px; }
+header .name { font-size: 1.5em; font-weight: bold; color: #222; text-decoration: none; }
+nav a { margin-right: 16px; color: #444; }
+nav a.current { font-weight: bold; color: #000; text-decoration: none; }
+a { color: #1a5fb4; }
+img.profile { max-width: 260px; width: 100%; height: auto; display: block; margin: 0 0 20px; }
+h2 { margin-top: 32px; border-bottom: 1px solid #eee; }
+ul { padding-left: 22px; }
+li { margin-bottom: 6px; }
+.note { color: #555; }
