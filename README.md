@@ -1,4 +1,4 @@
-# simon-loewe.github.io
+# simon-lowe.github.io
 
 Personal website of Simon Löwe, ported as-is from https://sites.google.com/view/simonloewe/home.
 
